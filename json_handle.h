@@ -10,22 +10,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+#define CONFIG "/simple-player-config.json\0"
+
 typedef struct song {
     char* name;
     char* uri;
 } SONG;
 
-int load_songs(SONG** songs) {
+int load_songs(SONG** songs, char dir[]) {
+    char* config_dir = malloc(strlen(dir) + strlen(CONFIG));
+    strcpy(config_dir, dir);
+    strcat(config_dir, CONFIG);
+    printf("%s\n", config_dir);
+
     json_object* json_config;
-    FILE* input = fopen("./simple-player-config.json", "r");  
+    FILE* input = fopen(config_dir, "r");  
 
     if(input == NULL) {
-        printf("Error with opening the config file");
+        printf("Error with opening the config file\n");
         return -1;
     }
 
     if((json_config = json_object_from_fd(fileno(input))) == NULL){
-        printf("Error with parsing the config file");
+        printf("Error with parsing the config file\n");
         fclose(input);
         return -1;
     }
