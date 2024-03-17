@@ -14,10 +14,10 @@ int simple_player() {
     int choise = handle_ui(songs, songs_num);
 
     if(choise >= 0) {
-        printf("\nPlaying %s...\n", songs[choise].name);
+        printf("\nPlaying > %s...\n", songs[choise].name);
         return stream_api(songs[choise].uri);
     } else {
-        printf("\nNumber did not match any song...\n");
+        printf("\nNumber did not match any station.\nExiting...\n");
         return -1;
     }
 }
