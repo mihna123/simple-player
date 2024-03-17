@@ -1,10 +1,50 @@
 [
     {
-        "name": "Song",
-        "uri": "https://d3v8q8s4ls3wgc.cloudfront.net/123374.mp3"
+        "name": "Radio Stratford - radiostratford.com",
+        "uri": "http://us2.internet-radio.com:8151/stream"
     },
     {
-        "name": "Song2",
-        "uri": "https://www.someuri.rs"
+        "name": "Matt Johnson Radio - mattjohnsonmusic.com/radio",
+        "uri": "http://us2.internet-radio.com:8046/stream"
+    },
+    {
+        "name": "MEGATON CAFE RADIO - megatoncaferadio.com",
+        "uri": "http://us2.internet-radio.com:8443/stream"
+    },
+    {
+        "name": "Joy Radio - www.joyradio.co.uk",
+        "uri": "http://uk5.internet-radio.com:8174/stream"
+    },
+    {
+        "name": "RADIO ESTILO LEBLON - mixcloud.com/radioestileleblon/",
+        "uri": "http://us4.internet-radio.com:8193/stream"
+    },
+    {
+        "name": "Cool Dance Radio - cooldanceradio.com",
+        "uri": "http://94.228.133.6:8360/"
+    },
+    {
+        "name": "Majestic Jukebox Radio - majesticjukeboxradio.com",
+        "uri": "http://uk3.internet-radio.com:8405/live"
+    },
+    {
+        "name": "Maddem Radio",
+        "uri": "http://37.59.47.192:8676/stream"
+    },
+    {
+        "name": "HBR1.com - I.D.M. Tranceponder",
+        "uri": "http://radio.hbr1.com/stream/trance.ogg"
+    },
+    {
+        "name": "HBR1.com - Tronic Lounge",
+        "uri": "http://radio.hbr1.com/stream/tronic.ogg"
+    },
+    {
+        "name": "HBR1.com - Dream Factory",
+        "uri": "http://radio.hbr1.com/stream/ambient.ogg"
+    },
+    {
+        "name": "Tiger rag",
+        "uri": "https://d3v8q8s4ls3wgc.cloudfront.net/123374.mp3"
     }
 ]
