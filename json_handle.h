@@ -22,7 +22,6 @@ int load_songs(SONG** songs, char dir[]) {
     char* config_dir = malloc(strlen(dir) + strlen(CONFIG));
     strcpy(config_dir, dir);
     strcat(config_dir, CONFIG);
-    printf("%s\n", config_dir);
 
     json_object* json_config;
     FILE* input = fopen(config_dir, "r");  
