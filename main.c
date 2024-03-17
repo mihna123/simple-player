@@ -12,9 +12,14 @@ int simple_player() {
     SONG* songs;
     int songs_num = load_songs(&songs);
     int choise = handle_ui(songs, songs_num);
-    
-    printf("\nPlaying %s...\n", songs[choise].name);
-    return stream_api(songs[choise].uri);
+
+    if(choise >= 0) {
+        printf("\nPlaying %s...\n", songs[choise].name);
+        return stream_api(songs[choise].uri);
+    } else {
+        printf("\nNumber did not match any song...\n");
+        return -1;
+    }
 }
 
 int main(int argc, char* argv[]) {
